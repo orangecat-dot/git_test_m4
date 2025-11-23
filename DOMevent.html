@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises for DOM and events</title>
+    <script src='15.11.DOMexercise.js'></script>
+</head>
+<body>
+    <section>
+        <img src="dinosaur.png" alt="A red Tyrannosaurus Rex: A two legged dinosaur standing upright like a human, with small arms, and a large head with lots of sharp teeth.">
+        <p>Here we will add a link to the <a href="https://www.mozilla.org/">Mozilla homepage</a></p>
+        <p
+        style="color: white; background-color: black; padding: 10px; width: 250px; text-align: center;">
+        We hope you enjoyed the ride.
+        </p>
+    </section>
+    <script>
+        const link = document.querySelector("a"); //querySelector() call will match 
+        // the first <a> element that appears in the document
+
+        //change the text inside the link by updating the value of the Node.textContent property
+        link.textContent = "Mozilla Developer Network"; 
+        //change the URL the link is pointing to
+        link.href = "https://developer.mozilla.org";
+
+        const sect = document.querySelector("section");
+        const para = document.createElement("p");
+        para.textContent = "We hope you enjoyed the ride.";
+        para.style.color = "white";
+        para.style.backgroundColor = "black";
+        para.style.padding = "10px";
+        para.style.width = "250px";
+        para.style.textAlign = "center";
+        sect.appendChild(para);
+        const text = document.createTextNode(" — the premier source for web development knowledge.",);
+        const linkPara = document.querySelector("p");
+        linkPara.appendChild(text);
+
+    </script>
+</body>
+</html>
