@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+
+.body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: auto auto 1fr;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.header-one {
+    display: grid;
+    grid-column: 2 / 4;
+    background-color: white;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+#search-btn{
+    width: 1.5rem;
+    height: auto;
+}
+#notification {
+    width: 1.5rem;
+}
+
+.search-Area {
+    display: grid;
+
+    grid-column: 1;
+
+}
+
+input {
+    width: 80%;
+    height: 1rem;
+    padding: 0.5rem;
+    background-color: hsl(210, 10%, 84%);
+    border: none;
+    border-radius: 1.5em;;
+}
+
+.Profile {
+    display: grid;
+
+    grid-column: 2;
+
+}
+
+.header-two {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column: 2 / 3;
+    background-color: white; 
+
+}
+
+.Greetings {
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
+    font-weight: bold;
+
+}
+.hello > div:last-child {
+    font-size: 1.25rem;
+
+}
+
+.menu {
+    display: grid;
+    grid-column: 2/4;
+}
+.menu ul {
+    display: grid;
+    grid-column: 2;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-self: center;
+    gap: 1em;
+    margin-right: 2.5rem;
+}
+
+.menu li{
+    list-style-type: none;
+}
+.sub-btn {
+    background-color: hsl(208, 63%, 50%);
+    border: none;
+    color: white;
+    font-size: clamp(0.9rem, 1vw, 1.1rem);
+    padding: 0.6em 1.2em;
+    width: 7rem;
+    border-radius: 1.5em;
+    cursor: pointer;
+
+
+}
+
+.sub-btn:active {
+    background-color: hsl(208, 63%, 70%)
+
+}
+.sub-btn:hover {
+    background-color: hsl(208, 63%, 55%)
+
+}
+.sidebar {
+    display: grid;
+    background-color: hsl(208, 63%, 51%);
+    grid-template-rows: 1fr 5fr 3fr 6fr;
+    color: white;
+    grid-column: 1 / 2;
+    grid-row: 1/4; 
+    padding: 60px;
+    gap: 40px;
+
+}
+
+.sidebar li{
+    list-style-type: none;
+}
+
+.main-field {
+    display: grid;
+    grid-column: 2 / 4;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: hsl(210, 29%, 95%);
+
+
+}
+
+
+.field-one {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-column: 1;
+    grid-row: 1 / 3;
+    gap: 1rem; 
+    padding: 1rem;
+    
+
+
+}
+
+.icons {
+    display: flex;
+    gap: 2rem;
+    margin-right: 1rem;
+    padding-top: 2rem;
+    margin-left: 20rem;
+}
+.icons-svg {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 1.5em;
+    width: auto;
+    color: black;
+} 
+.field-one-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    border: none;
+}
+.articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    grid-column: 1 / 3;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 95%;
+    
+}
+
+.articles .card {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    color: black;
+    text-align: center;
+    padding: 2rem;
+    border-left: 0.5em solid #e79a3d;
+    border-radius: 1em;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    
+}
+
+.card p {
+    color: rgb(136, 131, 131);
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    padding: 5px;
+    margin-right: 7rem;
+    text-align: left;
+}
+  
+.card .title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+}
+
+.field-two {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-column: 2;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.field-two-title, .field-three-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+
+}
+.announcements, .user-list {
+    display: grid;
+    background-color: #FFFFFF;
+    width: 70%;
+    padding: 2rem;
+    gap: 2rem;
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+.piece .title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+    margin-bottom: 0.5rem;
+
+}
+.announcements > div {
+    color: rgb(136, 131, 131);
+    margin-left: 1rem;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #c0bdbd;
+}
+  
+.announcements > div:last-child {
+    border-bottom: none;
+}
+
+.field-three {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-row: 2;
+    grid-column: 2;
+
+}
+
+.userlist-item {
+    color: rgb(136, 131, 131);
+    display: flex;
+    gap: 2rem;
+    
+
+}
+.userlist-item > div > p:first-child {
+    color: black;
+    font-size: 1.2rem;
+    
+}
+
+.user-list ul{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    display: grid;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+
+.user-list {
+    height: 75%;
+}
+
+
+.Dashboard {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    gap: 2rem;
+    font-size: 2.5rem;
+
+    
+}
+
+
+.D-menu-One ul, .D-menu-Two ul {
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    gap: 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.Dashboard-option {
+
+    display: flex;
+    gap: 2rem;
+}
+
+button {
+    cursor: pointer;
+}
+.db-icon {
+    height: 1em;
+    width: auto;
+    color: white;
+    padding: 2px;
+
+}
+
+.user-portrait {
+    height: 3rem;
+    width: auto;
+    
+}
+.db-big-icon {
+    height: 4rem;
+    width: auto;
+    color: white;
+}
+
+#search-btn, #notification {
+    background: none;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+  
+#search-btn, .search-svg, .noti-svg, #notification {
+    height: 1.5em;
+    width: auto;
+    color: black;
+
+}
+  
+.searchArea, .Profile {
+    display: flex;
+    margin-left: 2.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+}
+
+.Profile {
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+
+.Account {
+    font-size: 1rem;
+    padding: 0.5rem;
+}
